@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block content %}
+<a href="{{ url_for('about') }}">About</a>
+{% for text in texts %}
+<div class="class1">{{text}}</div>
+{% endfor %}
+{% endblock content %}
